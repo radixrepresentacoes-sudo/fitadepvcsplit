@@ -1,145 +1,129 @@
-/* Reset básico */
-* {
+/* ===== Geral ===== */
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-/* Corpo da página */
-body {
-  background: #f0f4f8;
+  background-color: #f5f8fa;
   color: #333;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
-/* Cabeçalho */
+/* ===== Header ===== */
 header {
+  background-color: #0D47A1;
+  color: #fff;
   text-align: center;
-  padding: 50px 20px;
-  background: linear-gradient(135deg, #1e90ff, #00bfff);
-  color: white;
+  padding: 40px 20px;
 }
 
 header h1 {
-  font-size: 2rem;
-  margin-bottom: 15px;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
 header p {
   font-size: 1.2rem;
-  max-width: 800px;
-  margin: auto;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-/* Main / Conteúdo */
+/* ===== Main ===== */
 main {
-  flex: 1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  padding: 40px 20px;
   max-width: 1000px;
-  margin: 40px auto;
-  padding: 0 20px;
+  margin: 0 auto;
 }
 
-/* Seção do produto */
-.produto {
-  text-align: center;
-}
-
+/* Produto */
 .produto img {
   max-width: 100%;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  height: auto;
+  display: block;
+  margin: 20px auto;
 }
 
-.produto ul {
-  list-style: none;
-  text-align: left;
+/* Descrição */
+.descricao {
+  margin: 30px 0;
+  line-height: 1.6;
   font-size: 1.1rem;
-  line-height: 1.8;
-  color: #1e3a8a;
-  padding-left: 20px;
 }
 
-.produto li::before {
-  content: "✔ ";
-  color: #1e90ff;
+/* Aplicações */
+.aplicacoes {
+  margin: 30px 0;
+}
+
+.aplicacoes ul {
+  list-style: none;
+  padding: 0;
+}
+
+.aplicacoes li {
+  background-color: #e3f2fd;
+  margin: 10px 0;
+  padding: 12px 15px;
+  border-left: 5px solid #0D47A1;
   font-weight: bold;
 }
 
-/* Seção de captura / formulário */
+/* ===== Formulário ===== */
 .captura {
-  background: white;
+  background-color: #e3f2fd;
   padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  margin-top: 40px;
 }
 
 .captura h2 {
-  color: #1e90ff;
+  color: #0D47A1;
   margin-bottom: 15px;
 }
 
 .captura p {
   margin-bottom: 20px;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #333;
 }
 
-/* Formulário */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-form input {
+form input, form button {
+  display: block;
+  width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  margin-bottom: 15px;
   font-size: 1rem;
-}
-
-form input:focus {
-  outline: none;
-  border-color: #1e90ff;
-  box-shadow: 0 0 5px rgba(30,144,255,0.5);
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
 form button {
-  padding: 14px;
-  background: #1e90ff;
-  border: none;
-  border-radius: 8px;
-  font-size: 1.1rem;
+  background-color: #0D47A1;
   color: #fff;
+  border: none;
   cursor: pointer;
-  transition: background 0.3s, transform 0.2s;
+  font-weight: bold;
 }
 
 form button:hover {
-  background: #007acc;
-  transform: translateY(-2px);
+  background-color: #1565C0;
 }
 
-/* Rodapé */
+/* ===== Footer ===== */
 footer {
+  background-color: #0D47A1;
+  color: #fff;
   text-align: center;
   padding: 20px;
-  font-size: 0.9rem;
-  background: #1e3a8a;
-  color: white;
+  margin-top: 50px;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-  main {
-    grid-template-columns: 1fr;
-  }
+/* ===== WhatsApp flutuante ===== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.whatsapp-float img {
+  width: 60px;
+  height: 60px;
 }

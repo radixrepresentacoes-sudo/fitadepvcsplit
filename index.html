@@ -5,6 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fita de PVC para Isolamento em Refrigeração - Compre Direto da Fábrica</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Header */
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #0D47A1;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+      margin-bottom: 10px;
+    }
+    header h2 {
+      font-size: 1.5rem;
+      color: #1565C0;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    /* WhatsApp flutuante */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+    .whatsapp-float img {
+      width: 60px;
+      height: 60px;
+    }
+
+    /* Botão do formulário */
+    form button {
+      background-color: #0D47A1;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #1565C0;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -29,17 +73,22 @@
       <p><strong>Poucas unidades em promoção!</strong> Preencha o formulário abaixo e receba seu orçamento exclusivo.</p>
       
       <form name="lead-form" method="POST" data-netlify="true">
-  <input type="text" name="nome" placeholder="Seu nome" required>
-  <input type="email" name="email" placeholder="Seu e-mail" required>
-  <input type="text" name="empresa" placeholder="Nome da sua empresa" required>
-  <input type="tel" name="telefone" placeholder="Telefone (somente números)" required pattern="[0-9]{10,11}">
-  <button type="submit">Quero meu orçamento</button>
-</form>
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <input type="text" name="empresa" placeholder="Nome da sua empresa" required>
+        <input type="tel" name="telefone" placeholder="Telefone (somente números)" required pattern="[0-9]{10,11}">
+        <button type="submit">Quero meu orçamento</button>
+      </form>
     </section>
   </main>
 
   <footer>
     <p>© 2025 Fi100 - Fitas de PVC. Todos os direitos reservados.</p>
   </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a href="https://wa.me/5521993371452?text=Olá,%20quero%20mais%20informações%20sobre%20a%20fita%20de%20PVC!" target="_blank" class="whatsapp-float">
+    <img src="whatsapp-icon.png" alt="WhatsApp">
+  </a>
 </body>
 </html>
